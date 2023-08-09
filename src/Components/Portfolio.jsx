@@ -19,9 +19,9 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/trail-in-woods.jpg";
+//import image from "../images/trail-in-woods.jpg";
 
-const imageAltText = "Trees bending over a trail in the woods.";
+//const imageAltText = "Trees bending over a trail in the woods.";
 
 /**
  * Project list
@@ -31,16 +31,17 @@ const imageAltText = "Trees bending over a trail in the woods.";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "Pig Dice Game",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      "Spin on classic dice game. Created with TypeScript, CSS and HTMl. Hosted on GitHub Pages.",
+    url: "https://github.com/TaylorMerwin/dice-game",
   },
   {
     title: "Crafty Companion",
     description:
       "Project management application written in Java. Includes a GUI, unit tests, and data persistence. Created for TCSS 360: Software Development and Quality Assurance Techniques",
     url: "https://github.com/TaylorMerwin/TCSS360-team-project-taylor",
+    photo: "https://cdn.pixabay.com/photo/2023/07/15/12/58/sunflower-8128779_1280.jpg"
   },
   {
     title: "My Resume Site",
@@ -61,13 +62,7 @@ const Portfolio = () => {
     <section className="padding" id="portfolio">
       <h2 style={{ textAlign: "center" }}>Portfolio</h2>
       <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
-        <div style={{ maxWidth: "40%", alignSelf: "center" }}>
-          <img
-            src={image}
-            style={{ height: "90%", width: "100%", objectFit: "cover" }}
-            alt={imageAltText}
-          />
-        </div>
+        <div style={{ maxWidth: "40%", alignSelf: "center" }}></div>
         <div className="container">
           {projectList.map((project) => (
             <div className="box" key={project.title}>
@@ -75,6 +70,7 @@ const Portfolio = () => {
                 <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
               </a>
               <p className="small">{project.description}</p>
+              {project.photo && <img src={project.photo} alt={project.title} />}
             </div>
           ))}
         </div>

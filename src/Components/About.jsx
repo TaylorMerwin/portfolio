@@ -24,19 +24,19 @@ const imageAltText = "Ocean waves with interesting lighting at sunset.";
  * Sort description that expands on your title on the Home component.
  */
 const description =
-  "I'm a UI/UX student studying at Barnett Technical University. I enjoy creating unique and simplistic user interfaces in creative ways.";
+  "I'm a Computer Science student studying at University of Washington Tacoma. I enjoy creating unique user experiences and solving business problems. ";
 
 /**
  * List of some of skills or technologies you work on, are learning,
  * passionate about, or enjoy,
  */
 const skillsList = [
-  "Web design",
-  "User experience",
-  "Inclusive design",
-  "Focus group testing",
-  "Mobile user interfaces",
-  "Graphic design",
+  "Java",
+  "TypeScript",
+  "C# & .NET",
+  "HTML & CSS",
+  "Agile Development",
+  "Figma & Adobe CC",
 ];
 
 /**
@@ -53,11 +53,12 @@ const About = () => {
       <img className="background" src={image} alt={imageAltText} />
       <div
         style={{
-          backgroundColor: "white",
+          backgroundColor: "#1E3E59",
           width: "50%",
           padding: "4rem",
           margin: "3rem auto",
           textAlign: "center",
+          color: "#F2CA99",
         }}
       >
         <h2>About Myself</h2>
