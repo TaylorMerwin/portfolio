@@ -19,16 +19,24 @@ const imageAltText = "A mountain range with trees in the foreground illuminated 
 const Home = ({ name, title }) => {
   return (
     <section id="home" className="min-height">
-      <img className="background" src={image} alt="" />
+      <div className="overlay" >
+        <img
+          className="background"
+          src={image}
+          alt="A summer sunset seen on a mountain range in the PNW."
+        />
+      </div>
       <div
         style={{
           position: "absolute",
-          top: "5rem",
-          left: "2rem",
+          top: "4rem",
+          left: "5rem",
           width: "17rem",
+          textShadow: "2px 2px 4px #000000",
+
         }}
       >
-        <h1 style={{ color: "#F2A35E", textShadow: "2px 2px 4px #000000" }}>{name}</h1>
+        <h1>{name}</h1>
         <h2>{title}</h2>
       </div>
       <div style={{ position: "absolute", bottom: "3rem", left: "50%" }}>
