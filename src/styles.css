@@ -116,7 +116,7 @@ a:hover {
 }
 
 .container .box {
-  border-radius: 10px;
+  border-radius: 20px;
   /*border: 1px solid rgb(204, 204, 204);*/
   display: flex;
   flex-direction: column;
@@ -137,3 +137,4 @@ img.socialIcon {
 #portfolio {
   background-color: #1E3E59;
 }
+
