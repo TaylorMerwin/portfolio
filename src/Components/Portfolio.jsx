@@ -26,15 +26,28 @@ const projectList = [
     url: "https://github.com/TaylorMerwin/TCSS360-team-project-taylor",
     photo: "https://cdn.pixabay.com/photo/2023/07/15/12/58/sunflower-8128779_1280.jpg",
   },
+  {
+    title: "Resume",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    url: "https://github.com/TaylorMerwin/TCSS360-team-project-taylor",
+    photo: "https://cdn.pixabay.com/photo/2023/07/15/12/58/sunflower-8128779_1280.jpg",
+  },
+  {
+    title: "Website Design rework",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    url: "https://www.tacoma.uw.edu/soe",
+    photo: "https://cdn.pixabay.com/photo/2023/07/15/12/58/sunflower-8128779_1280.jpg",
+  },
 ];
 
 const Portfolio = () => {
   return (
     <section className="padding" id="portfolio">
-      <h2 style={{ textAlign: "center" }}>Portfolio</h2>
-      <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
-        <div style={{ maxWidth: "40%", alignSelf: "center" }}></div>
-        <div className="container" style={{ maxWidth: "40%" }}>
+      <h2>Portfolio</h2>
+      <div id="flex-container">
+        <div className="container" style={{}}>
           {projectList.map((project) => (
             <div className="box" key={project.title}>
               <a href={project.url} target="_blank" rel="noopener noreferrer">
@@ -49,5 +62,6 @@ const Portfolio = () => {
     </section>
   );
 };
+
 
 export default Portfolio;

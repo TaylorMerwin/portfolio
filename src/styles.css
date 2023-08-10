@@ -35,6 +35,12 @@ section.padding {
 }
 
 
+#home {
+  background: rgb(30,62,89);
+background: linear-gradient(144deg, rgba(30,62,89,1) 31%, rgba(94,123,140,1) 76%);
+}
+
+
 
 section img.background {
   height: 100%;
@@ -107,25 +113,56 @@ a:hover {
   color: #4e567e;
 }
 
-.container {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 330px 300px;
-  margin: 20px auto;
+/* Portfolio Page */
+
+#portfolio {
+  background-color: #1E3E59;
+}
+
+
+#portfolio h2 {
+  text-align: center;
+}
+
+#portfolio #flex-container {
+  display: "flex";
+  flex-direction: "row";
+  padding-top: "3rem";
+  justify-content: "space-between";
 
 }
 
+.container {
+
+  display: grid;
+  grid-gap: 20px;
+  /*grid-template-columns: 330px 300px;*/
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 20px auto;
+
+  max-height: 60%;
+  max-width: 60%;
+
+}
+
+
 .container .box {
-  border-radius: 20px;
+  border-radius: 5%;
   /*border: 1px solid rgb(204, 204, 204);*/
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 24px 16px;
+  padding: 20px 24px;
   text-align: center;
-  background-color: #F2CA99;
+  background-color: #F2A35E;
   color: black;
-  text-emphasis: bold; 
+}
+
+.box img{
+  align-self: center;
+  border-radius: 5%;
+  max-width: 70%;
+  max-height: 70%;
 }
 
 img.socialIcon {
@@ -134,7 +171,4 @@ img.socialIcon {
   color:#F2A35E;
 }
 
-#portfolio {
-  background-color: #1E3E59;
-}
 

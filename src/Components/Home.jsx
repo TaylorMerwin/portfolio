@@ -19,13 +19,8 @@ const imageAltText = "A mountain range with trees in the foreground illuminated 
 const Home = ({ name, title }) => {
   return (
     <section id="home" className="min-height">
-      <div className="overlay" >
-        <img
-          className="background"
-          src={image}
-          alt="A summer sunset seen on a mountain range in the PNW."
-        />
-      </div>
+
+
       <div
         style={{
           position: "absolute",
