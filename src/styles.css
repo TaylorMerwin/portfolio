@@ -27,7 +27,7 @@ section {
 }
 
 section.min-height {
-  min-height: 100vh;
+  min-height: 60vh;
 }
 
 section.padding {
@@ -137,11 +137,11 @@ a:hover {
   display: grid;
   grid-gap: 20px;
   /*grid-template-columns: 330px 300px;*/
-  grid-template-columns: 1fr 1fr 1fr;
+  /*grid-template-columns: 1fr 1fr 1fr 1fr; */
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   margin: 20px auto;
-
   max-height: 60%;
-  max-width: 60%;
+  max-width: 80%;
 
 }
 
@@ -154,8 +154,12 @@ a:hover {
   justify-content: flex-start;
   padding: 20px 24px;
   text-align: center;
-  background-color: #F2A35E;
-  color: black;
+  background-color: #5E7B8C;
+}
+
+.container a{
+  color: #1E3E59;
+
 }
 
 .box img{
@@ -163,6 +167,7 @@ a:hover {
   border-radius: 5%;
   max-width: 70%;
   max-height: 70%;
+  margin-top: 1rem;
 }
 
 img.socialIcon {

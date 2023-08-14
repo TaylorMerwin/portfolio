@@ -34,7 +34,7 @@ const projectList = [
     photo: "https://cdn.pixabay.com/photo/2023/07/15/12/58/sunflower-8128779_1280.jpg",
   },
   {
-    title: "Website Design rework",
+    title: "Website Content Management",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     url: "https://www.tacoma.uw.edu/soe",
@@ -51,10 +51,10 @@ const Portfolio = () => {
           {projectList.map((project) => (
             <div className="box" key={project.title}>
               <a href={project.url} target="_blank" rel="noopener noreferrer">
-                <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
+                <h3 style={{ flexBasis: "40px"}}>{project.title}</h3>
+                {project.photo && <img src={project.photo} alt={project.title} />}
+                <p className="small">{project.description}</p>
               </a>
-              <p className="small">{project.description}</p>
-              {project.photo && <img src={project.photo} alt={project.title} />}
             </div>
           ))}
         </div>

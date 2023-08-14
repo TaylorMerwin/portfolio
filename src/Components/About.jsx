@@ -59,10 +59,11 @@ const About = () => {
           margin: "3rem auto",
           textAlign: "center",
           color: "#F2CA99",
-          borderRadius: "20px",
+          borderRadius: "5%",
         }}
       >
-        <h2>About Myself</h2>
+        <h2>Taylor Merwin</h2>
+        <h3>Computer science student & developer</h3>
         <p className="large">{description}</p>
         <hr />
         <ul

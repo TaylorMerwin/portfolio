@@ -9,13 +9,6 @@ import React from "react";
 import arrowSvg from "../images/down-arrow.svg";
 import PropTypes from "prop-types";
 
-/**
- * Home background image
- */
-import image from "../images/mountain-range.jpg";
-
-const imageAltText = "A mountain range with trees in the foreground illuminated by a sunset.";
-
 const Home = ({ name, title }) => {
   return (
     <section id="home" className="min-height">
@@ -27,7 +20,6 @@ const Home = ({ name, title }) => {
           top: "4rem",
           left: "5rem",
           width: "17rem",
-          textShadow: "2px 2px 4px #000000",
 
         }}
       >
@@ -35,7 +27,7 @@ const Home = ({ name, title }) => {
         <h2>{title}</h2>
       </div>
       <div style={{ position: "absolute", bottom: "3rem", left: "50%" }}>
-        <img src={arrowSvg} style={{ height: "3rem", width: "3rem" }} alt={imageAltText} />
+        <img src={arrowSvg} style={{ height: "3rem", width: "3rem" }} alt={"imageAltText"} />
       </div>
     </section>
   );
